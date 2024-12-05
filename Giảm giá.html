@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hoa Quả Nhà Trồng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <header>
+        <h1>HOA QUẢ NHÀ TRỒNG</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><strong>DANH MỤC</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="giamgia">Giảm giá</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Hoa quả ba miền</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa quả nhập khẩu</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa quả đông lạnh</a></li>
+                                <li><a class="dropdown-item" href="#">Giỏ hoa quả</a></li>
+                                <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Liên hệ.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <a href="admin.html" class="Quanly">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Quản lý</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h3>Giảm giá sốc - Ưu đãi đến tay</h3>
+    <hr />
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-lg-3">
+                <div class="row mt-4">
+                    <img src="image/Tết đến rồi bạn ơi! Mua giỏ quà tặng người thân đi nào.png"
+                        class="rounded mx-auto d-block" alt="Ảnh">
+                </div>
+                <div class="row mt-4">
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item" id="Danhmuc"><strong>Lọc giá</strong></li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                            <label class="form-check-label" for="firstCheckbox">dưới 100.000đ</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                            <label class="form-check-label" for="secondCheckbox">100.000đ - 200.000đ</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label" for="thirdCheckbox">200.000đ - 500.000đ</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckbox">
+                            <label class="form-check-label" for="fourthCheckbox">500.000đ - 1.000.000đ</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckbox">
+                            <label class="form-check-label" for="fifthCheckbox">Từ 1.000.000đ trở lên</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <!--Sản phẩm-->
+                <div class="row mt-4 ms-3">
+                    <div class="col-lg-4 col-md-4 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="image/traicay3.jpg" class="card-img-top" alt="Ảnh">
+                            <div class="card-body">
+                                <h5 class="card-title">Cam Đà Lạt</h5>
+                                <p class="card-text" id="Gachngang">20.000 VND/kg</p>
+                                <p class="card-text">16.000 VND/kg</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-outline-success">Đặt mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="image/traicay4.jpg" class="card-img-top" alt="Ảnh">
+                            <div class="card-body">
+                                <h5 class="card-title">Nho ôn đới</h5>
+                                <p class="card-text" id="Gachngang">15.000 VND/kg</p>
+                                <p class="card-text">13.000 VND/kg</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-outline-success">Đặt mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="image/traicay5.jpg" class="card-img-top" alt="Ảnh">
+                            <div class="card-body">
+                                <h5 class="card-title">Xoài Bình Dương</h5>
+                                <p class="card-text" id="Gachngang">100.000 VND/kg</p>
+                                <p class="card-text">55.000 VND/kg</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-outline-success">Đặt mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="image/traicay6.jpg" class="card-img-top" alt="Ảnh">
+                            <div class="card-body">
+                                <h5 class="card-title">Dưa hấu không hột</h5>
+                                <p class="card-text" id="Gachngang">20.000 VNT/kg</p>
+                                <p class="card-text">17.000 VND/kg</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-outline-success">Đặt mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="image/traicay7.jpg" class="card-img-top" alt="Ảnh">
+                            <div class="card-body">
+                                <h5 class="card-title">Mãng cầu ta</h5>
+                                <p class="card-text" id="Gachngang">15.000 VND/kg</p>
+                                <p class="card-text">13.000 VND/kg</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-outline-success">Đặt mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="image/traicay8.jpg" class="card-img-top" alt="Ảnh">
+                            <div class="card-body">
+                                <h5 class="card-title">Chuối</h5>
+                                <p class="card-text" id="Gachngang">16.000 VND/kg</p>
+                                <p class="card-text">14.000 VND/kg</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-outline-success">Đặt mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="image/traicay9.jpg" class="card-img-top" alt="Ảnh">
+                            <div class="card-body">
+                                <h5 class="card-title">Táo đỏ</h5>
+                                <p class="card-text" id="Gachngang">12.000 VND/kg</p>
+                                <p class="card-text">10.000 VND/kg</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-outline-success">Đặt mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="image/traicay10.jpg" class="card-img-top" alt="Ảnh">
+                            <div class="card-body">
+                                <h5 class="card-title">Cherry Úc</h5>
+                                <p class="card-text" id="Gachngang">16.000 VND/kg</p>
+                                <p class="card-text">13.000 VND/kg</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-outline-success">Đặt mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="image/traicay11.jpg" class="card-img-top" alt="Ảnh">
+                            <div class="card-body">
+                                <h5 class="card-title">Dưa lưới Đà Lạt</h5>
+                                <p class="card-text" id="Gachngang">17.000 VND/kg</p>
+                                <p class="card-text">15.000 VND/kg</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-outline-success">Đặt mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="image/traicay12.jpg" class="card-img-top" alt="Ảnh">
+                            <div class="card-body">
+                                <h5 class="card-title">Dâu tây Hàn Quốc</h5>
+                                <p class="card-text" id="Gachngang">16.000 VND/kg</p>
+                                <p class="card-text">15.000 VND/kg</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-outline-success">Đặt mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="image/traicay13.jpg" class="card-img-top" alt="Ảnh">
+                            <div class="card-body">
+                                <h5 class="card-title">Kiwi xanh</h5>
+                                <p class="card-text" id="Gachngang">20.000 VND/kg</p>
+                                <p class="card-text">17.000 VND/kg</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-outline-success">Đặt mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="image/traicay14.jpg" class="card-img-top" alt="Ảnh">
+                            <div class="card-body">
+                                <h5 class="card-title">Quả bơ</h5>
+                                <p class="card-text" id="Gachngang">16.000 VND/kg</p>
+                                <p class="card-text">14.000 VND/kg</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-outline-success">Đặt mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Chuyển trang-->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer class="mt-5 pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col" id="footer">
+                        <h5 class="tieudefooter">Chính sách</h5>
+                        <ul>
+                            <li><a href="#" class="cs">Chính sách giao hàng</a></li>
+                            <li><a href="#" class="cs">Chính sách đổi trả</a></li>
+                            <li><a href="#" class="cs">Chính sách bảo mật thông tin cá nhân</a></li>
+                            <li><a href="#" class="cs">Quy định và hình thức thanh toán</a></li>
+                        </ul>
+                    </div>
+                    <div class="col" id="footer">
+                        <h5 class="tieudefooter">Thông tin công ty</h5>
+                        <p>Công Ty TNHH Hoa Quả Nhà Trồng</p>
+                        <p>Trụ sở: 280 Đ. An Dương Vương, Phường 4, Quận 5, TP.Hồ Chí Minh</p>
+                        <p>Hotline: 0879917194</p>
+                    </div>
+                    <div class="col" id="footer">
+                        <h5 class="tieudefooter">Liên hệ qua nền tảng</h5>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="Copyright">
+            <p>Copyright &#169 2024 Hoa_Qua_Nha_Trong Market</p>
+        </div>
+        <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

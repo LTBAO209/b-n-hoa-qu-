@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoa Quả Nhà Trồng</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <header>
+    <h1>HOA QUẢ NHÀ TRỒNG</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong>DANH MỤC</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Giảm giá.html">Giảm giá</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Sản phẩm
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Hoa quả ba miền</a></li>
+                <li><a class="dropdown-item" href="#">Hoa quả nhập khẩu</a></li>
+                <li><a class="dropdown-item" href="#">Hoa quả đông lạnh</a></li>
+                <li><a class="dropdown-item" href="#">Giỏ hoa quả</a></li>
+                <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Liên hệ.html">Liên hệ</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <a href="#" class="Quanly" id="Qly">
+            <i class="fa-solid fa-user"></i>
+            <span>Quản lý</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container mt-5">
+    <h1 class="text-center text-primary mb-4">Quản lý sản phẩm</h1>
+    <div class="card mb-5">
+      <div class="card-header bg-primary text-white">Danh sách sản phẩm</div>
+      <div class="card-body">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>#</th>
+              <th>Tên sản phẩm</th>
+              <th>Giá (VNĐ)</th>
+              <th>Số lượng còn lại</th>
+              <th>Số lượng đã bán</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Táo Mỹ</td>
+              <td>50,000</td>
+              <td>80</td>
+              <td>20</td>
+              <td>
+                <button class="btn btn-warning btn-sm">Sửa</button>
+                <button class="btn btn-danger btn-sm">Xóa</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Cam Úc</td>
+              <td>80,000</td>
+              <td>30</td>
+              <td>70</td>
+              <td>
+                <button class="btn btn-warning btn-sm">Sửa</button>
+                <button class="btn btn-danger btn-sm">Xóa</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header bg-success text-white">Thêm sản phẩm mới</div>
+      <div class="card-body">
+        <form>
+          <div class="mb-3">
+            <label for="productName" class="form-label">Tên sản phẩm</label>
+            <input type="text" id="productName" class="form-control" placeholder="Nhập tên sản phẩm">
+          </div>
+          <div class="mb-3">
+            <label for="productPrice" class="form-label">Giá (VNĐ)</label>
+            <input type="number" id="productPrice" class="form-control" placeholder="Nhập giá sản phẩm">
+          </div>
+          <div class="mb-3">
+            <label for="productQuantity" class="form-label">Số lượng</label>
+            <input type="number" id="productQuantity" class="form-control" placeholder="Nhập số lượng ban đầu">
+          </div>
+          <button type="submit" class="btn btn-success">Thêm sản phẩm</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="mt-5 pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="footer">
+          <h5 class="tieudefooter">Chính sách</h5>
+          <ul>
+            <li><a href="#" class="cs">Chính sách giao hàng</a></li>
+            <li><a href="#" class="cs">Chính sách đổi trả</a></li>
+            <li><a href="#" class="cs">Chính sách bảo mật thông tin cá nhân</a></li>
+            <li><a href="#" class="cs">Quy định và hình thức thanh toán</a></li>
+          </ul>
+        </div>
+        <div class="col" id="footer">
+          <h5 class="tieudefooter">Thông tin công ty</h5>
+          <p>Công Ty TNHH Hoa Quả Nhà Trồng</p>
+          <p>Trụ sở: 280 Đ. An Dương Vương, Phường 4, Quận 5, TP.Hồ Chí Minh</p>
+          <p>Hotline: 0879917194</p>
+        </div>
+        <div class="col" id="footer">
+          <h5 class="tieudefooter">Liên hệ qua nền tảng</h5>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="Copyright">
+    <p>Copyright &#169 2024 Hoa_Qua_Nha_Trong Market</p>
+  </div>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

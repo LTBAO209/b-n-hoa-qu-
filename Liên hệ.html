@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hoa Quả Nhà Trồng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <header>
+        <h1>HOA QUẢ NHÀ TRỒNG</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><strong>DANH MỤC</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Giảm giá.html">Giảm giá</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Hoa quả ba miền</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa quả nhập khẩu</a></li>
+                                <li><a class="dropdown-item" href="#">Hoa quả đông lạnh</a></li>
+                                <li><a class="dropdown-item" href="#">Giỏ hoa quả</a></li>
+                                <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="lienhe">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <a href="admin.html" class="Quanly">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Quản lý</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-lg-4">
+                <div class="row mt-4 me-3">
+                    <div class="card-header">
+                        <b>Soạn form gửi đi</b>
+                    </div>
+                    <form class="row g-3">
+                        <div class="col-12">
+                            <label for="tieude" class="form-label">Tiêu đề</label>
+                            <input type="number" class="form-control" id="tieu" placeholder="Nhập tiêu đề">
+                        </div>
+                        <div class="col-12">
+                            <label for="ten" class="form-label">Họ và tên</label>
+                            <input type="text" class="form-control" id="ten" placeholder="Nhập họ và tên">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Nhập email">
+                        </div>
+                        <div class="col-6">
+                            <label for="sdt" class="form-label">Số điện thoại</label>
+                            <input type="number" class="form-control" id="sdt" placeholder="Nhập số điện thoại">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Địa chỉ</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Nhập địa chỉ">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Nội dung</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                placeholder="Nhập nội dung"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary mb-3"><b>Gửi đi</b></button>
+                        </div>
+                    </form>
+                    <div class="card-footer text-body-secondary">
+                        Vui lòng nhập thông tin đầy đủ
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8" id="Chinhanh">
+                <div class="container">
+                    <div class="row mt-4">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Cửa hàng chính</h5>
+                                <p>280 Đ. An Dương Vương, Phường 4, Quận 5, TP.Hồ Chí Minh</p>
+                            </div>
+                            <div class="col">
+                                <h5>Cửa hàng 1</h5>
+                                <p>222 Đ. Lê Văn Sỹ, Phường 14, Quận 3, TP.Hồ Chí Minh</p>
+                            </div>
+                            <div class="col">
+                                <h5>Cửa hàng 2</h5>
+                                <p>351A Lạc Long Quân, Phường 5, Quận 11, TP.Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-5 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col" id="footer">
+                    <h5 class="tieudefooter">Chính sách</h5>
+                    <ul>
+                        <li><a href="#" class="cs">Chính sách giao hàng</a></li>
+                        <li><a href="#" class="cs">Chính sách đổi trả</a></li>
+                        <li><a href="#" class="cs">Chính sách bảo mật thông tin cá nhân</a></li>
+                        <li><a href="#" class="cs">Quy định và hình thức thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="col" id="footer">
+                    <h5 class="tieudefooter">Thông tin công ty</h5>
+                    <p>Công Ty TNHH Hoa Quả Nhà Trồng</p>
+                    <p>Trụ sở: 280 Đ. An Dương Vương, Phường 4, Quận 5, TP.Hồ Chí Minh</p>
+                    <p>Hotline: 0879917194</p>
+                </div>
+                <div class="col" id="footer">
+                    <h5 class="tieudefooter">Liên hệ qua nền tảng</h5>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="Copyright">
+        <p>Copyright &#169 2024 Hoa_Qua_Nha_Trong Market</p>
+    </div>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
