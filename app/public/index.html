@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoa Quả Nhà Trồng – Trái cây sạch hái tận vườn</title>
+  <meta name="description" content="Cửa hàng trái cây sạch Hoa Quả Nhà Trồng: trái cây ba miền, nhập khẩu, giỏ quà. Giao trong 2 giờ tại TP.HCM, miễn phí ship từ 300.000đ.">
+  <link rel="icon" href="/image/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/store.css">
+</head>
+
+<body data-page="home">
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="hero">
+      <img class="hero-img" src="/image/traicay.jpg" alt="Trái cây tươi mỗi ngày">
+      <div class="container hero-content">
+        <span class="hero-tag">Tươi mỗi ngày</span>
+        <h1>Trái cây sạch,<br>hái tận vườn</h1>
+        <p>Chọn từ nông trại trong ngày, giao tận cửa trong 2 giờ tại TP.HCM. Miễn phí giao cho đơn từ 300.000đ.</p>
+        <div>
+          <a class="btn btn-accent" href="#catalog">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn btn-ghost" href="index.html?sale=1">Xem giảm giá</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container usp-strip">
+      <div class="usp-item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div><strong>Giao nhanh 2 giờ</strong><span>Nội thành TP.HCM</span></div>
+      </div>
+      <div class="usp-item">
+        <i class="fa-solid fa-seedling"></i>
+        <div><strong>100% nhà trồng</strong><span>Không thuốc bảo quản</span></div>
+      </div>
+      <div class="usp-item">
+        <i class="fa-solid fa-rotate-left"></i>
+        <div><strong>Đổi trả 24 giờ</strong><span>Hàng lỗi, quả dập</span></div>
+      </div>
+      <div class="usp-item">
+        <i class="fa-solid fa-sack-dollar"></i>
+        <div><strong>Miễn phí ship</strong><span>Đơn từ 300.000đ</span></div>
+      </div>
+    </section>
+
+    <section class="catalog container" id="catalog">
+      <div class="catalog-head">
+        <div>
+          <h2 id="catalogTitle">Sản phẩm bán chạy</h2>
+          <p id="catalogSub">Chọn trái cây bạn thích, thêm vào giỏ và đặt hàng chỉ trong vài bước.</p>
+        </div>
+        <span class="result-count" id="resultCount"></span>
+      </div>
+
+      <div class="catalog-layout">
+        <aside class="filters">
+          <div class="filter-block">
+            <h3>Danh mục</h3>
+            <div class="cat-list" id="categoryList"></div>
+          </div>
+
+          <div class="filter-block">
+            <h3>Khoảng giá</h3>
+            <div class="price-list" id="priceList">
+              <label class="check-row"><input type="checkbox" data-price data-min="0" data-max="100000"> Dưới 100.000đ</label>
+              <label class="check-row"><input type="checkbox" data-price data-min="100000" data-max="200000"> 100.000đ – 200.000đ</label>
+              <label class="check-row"><input type="checkbox" data-price data-min="200000" data-max="500000"> 200.000đ – 500.000đ</label>
+              <label class="check-row"><input type="checkbox" data-price data-min="500000" data-max="1000000"> 500.000đ – 1.000.000đ</label>
+              <label class="check-row"><input type="checkbox" data-price data-min="1000000" data-max=""> Từ 1.000.000đ</label>
+            </div>
+          </div>
+
+          <div class="filter-block">
+            <h3>Sắp xếp</h3>
+            <select class="select" id="sortSelect" aria-label="Sắp xếp sản phẩm">
+              <option value="sold">Bán chạy nhất</option>
+              <option value="price-asc">Giá thấp đến cao</option>
+              <option value="price-desc">Giá cao đến thấp</option>
+              <option value="name">Tên A → Z</option>
+            </select>
+          </div>
+
+          <a class="promo-card" href="index.html?category=gio-qua">
+            <img src="/image/gio-qua-tet.png" alt="Giỏ quà trái cây Tết">
+            <strong>Tết đến rồi!</strong>
+            <span>Đặt giỏ quà trái cây cao cấp để tặng người thân.</span>
+          </a>
+        </aside>
+
+        <div class="products-area">
+          <div class="products-grid" id="productGrid"></div>
+          <nav class="pagination" id="pagination" aria-label="Chuyển trang"></nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <script src="assets/store.js"></script>
+</body>
+
+</html>

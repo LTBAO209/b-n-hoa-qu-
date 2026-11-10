@@ -1,0 +1,17 @@
+{
+  "name": "hoa-qua-nha-trong",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web bán trái cây Hoa Quả Nhà Trồng - cửa hàng cho khách và trang quản trị riêng, dữ liệu SQLite",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

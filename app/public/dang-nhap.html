@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng nhập – Hoa Quả Nhà Trồng</title>
+  <meta name="description" content="Đăng nhập để đặt hàng và theo dõi đơn trái cây của bạn.">
+  <link rel="icon" href="/image/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/store.css">
+</head>
+
+<body data-page="login">
+  <div id="siteHeader"></div>
+
+  <main class="container page">
+    <div class="auth-wrap">
+      <div class="auth-card">
+        <h1 style="color:#0f3d24">Đăng nhập</h1>
+        <p style="color:#6b7280">Đăng nhập để đặt hàng nhanh và xem lịch sử đơn hàng.</p>
+        <form id="loginForm" novalidate>
+          <div class="form-error"></div>
+          <div class="field">
+            <label for="loginEmail">Email</label>
+            <input class="input" id="loginEmail" name="email" type="email" required autocomplete="email" placeholder="ban@email.com">
+          </div>
+          <div class="field">
+            <label for="loginPassword">Mật khẩu</label>
+            <input class="input" id="loginPassword" name="password" type="password" required autocomplete="current-password" placeholder="Nhập mật khẩu">
+          </div>
+          <button class="btn btn-green btn-block" type="submit"><i class="fa-solid fa-right-to-bracket"></i> Đăng nhập</button>
+        </form>
+        <p style="margin-top:14px;font-size:14px">Chưa có tài khoản? <a href="dang-ky.html">Đăng ký ngay</a></p>
+      </div>
+
+      <div class="auth-side">
+        <h2>Hoa Quả Nhà Trồng</h2>
+        <p>Tài khoản giúp bạn đặt hàng nhanh hơn, lưu địa chỉ nhận hàng và theo dõi trạng thái đơn.</p>
+        <div class="demo-account">
+          <strong>Tài khoản khách demo</strong>
+          Email: khach@hoaquanhatrong.vn<br>
+          Mật khẩu: Khach@123
+        </div>
+        <div class="demo-account">
+          <strong>Tài khoản quản trị</strong>
+          Email: admin@hoaquanhatrong.vn<br>
+          Mật khẩu: Admin@123
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="siteFooter"></div>
+  <script src="assets/store.js"></script>
+</body>
+
+</html>

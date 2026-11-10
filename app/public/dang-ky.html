@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng ký – Hoa Quả Nhà Trồng</title>
+  <meta name="description" content="Tạo tài khoản để đặt trái cây sạch và theo dõi đơn hàng tại Hoa Quả Nhà Trồng.">
+  <link rel="icon" href="/image/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/store.css">
+</head>
+
+<body data-page="register">
+  <div id="siteHeader"></div>
+
+  <main class="container page">
+    <div class="auth-wrap">
+      <div class="auth-card">
+        <h1 style="color:#0f3d24">Tạo tài khoản</h1>
+        <p style="color:#6b7280">Chỉ mất một phút để đặt hàng nhanh hơn mỗi lần.</p>
+        <form id="registerForm" novalidate>
+          <div class="form-error"></div>
+          <div class="field">
+            <label for="regName">Họ và tên</label>
+            <input class="input" id="regName" name="name" required autocomplete="name" placeholder="Nguyễn Văn A">
+          </div>
+          <div class="field">
+            <label for="regPhone">Số điện thoại</label>
+            <input class="input" id="regPhone" name="phone" inputmode="numeric" pattern="0[0-9]{9,10}" placeholder="0901234567">
+          </div>
+          <div class="field">
+            <label for="regEmail">Email</label>
+            <input class="input" id="regEmail" name="email" type="email" required autocomplete="email" placeholder="ban@email.com">
+          </div>
+          <div class="field">
+            <label for="regPassword">Mật khẩu</label>
+            <input class="input" id="regPassword" name="password" type="password" minlength="6" required autocomplete="new-password" placeholder="Ít nhất 6 ký tự">
+          </div>
+          <button class="btn btn-green btn-block" type="submit"><i class="fa-solid fa-user-plus"></i> Đăng ký</button>
+        </form>
+        <p style="margin-top:14px;font-size:14px">Đã có tài khoản? <a href="dang-nhap.html">Đăng nhập</a></p>
+      </div>
+
+      <div class="auth-side">
+        <h2>Thành viên Hoa Quả Nhà Trồng</h2>
+        <p>Lưu địa chỉ giao hàng, xem lại lịch sử mua và nhận ưu đãi cho khách quen.</p>
+        <div class="demo-account">
+          <strong>Thông tin của bạn được bảo mật</strong>
+          Mật khẩu được mã hoá bằng scrypt trước khi lưu vào cơ sở dữ liệu.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="siteFooter"></div>
+  <script src="assets/store.js"></script>
+</body>
+
+</html>

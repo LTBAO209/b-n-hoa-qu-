@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liên hệ – Hoa Quả Nhà Trồng</title>
+  <meta name="description" content="Gửi tin nhắn cho Hoa Quả Nhà Trồng hoặc ghé 3 cửa hàng tại TP.HCM để chọn trái cây tươi mỗi ngày.">
+  <link rel="icon" href="/image/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/store.css">
+</head>
+
+<body data-page="contact">
+  <div id="siteHeader"></div>
+
+  <main class="container page">
+    <h1 style="color:#0f3d24;margin-bottom:6px">Liên hệ với chúng tôi</h1>
+    <p style="color:#6b7280;margin-bottom:20px">Cần tư vấn giỏ quà, đặt số lượng lớn hay góp ý chất lượng? Để lại thông tin, cửa hàng phản hồi trong 24 giờ.</p>
+
+    <div class="cart-layout">
+      <div class="panel">
+        <h2>Gửi tin nhắn</h2>
+        <div class="form-success" id="contactSuccess" hidden></div>
+        <form id="contactForm" novalidate>
+          <div class="form-error"></div>
+          <div class="field">
+            <label for="ctSubject">Tiêu đề</label>
+            <input class="input" id="ctSubject" name="subject" required placeholder="Ví dụ: Tư vấn giỏ quà Tết">
+          </div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="ctName">Họ và tên</label>
+              <input class="input" id="ctName" name="name" required placeholder="Nguyễn Văn A">
+            </div>
+            <div class="field">
+              <label for="ctPhone">Số điện thoại</label>
+              <input class="input" id="ctPhone" name="phone" required inputmode="numeric" pattern="0[0-9]{9,10}" placeholder="0901234567">
+            </div>
+          </div>
+          <div class="field">
+            <label for="ctEmail">Email</label>
+            <input class="input" id="ctEmail" name="email" type="email" placeholder="ban@email.com">
+          </div>
+          <div class="field">
+            <label for="ctContent">Nội dung</label>
+            <textarea class="textarea" id="ctContent" name="content" required placeholder="Nhập nội dung bạn muốn gửi..."></textarea>
+          </div>
+          <button class="btn btn-green" type="submit"><i class="fa-solid fa-paper-plane"></i> Gửi đi</button>
+        </form>
+      </div>
+
+      <div class="auth-side">
+        <h2>Hệ thống cửa hàng</h2>
+        <p><strong>Cửa hàng chính</strong><br>280 Đ. An Dương Vương, Phường 4, Quận 5, TP.HCM</p>
+        <p><strong>Cửa hàng 1</strong><br>222 Đ. Lê Văn Sỹ, Phường 14, Quận 3, TP.HCM</p>
+        <p><strong>Cửa hàng 2</strong><br>351A Lạc Long Quân, Phường 5, Quận 11, TP.HCM</p>
+        <p><i class="fa-solid fa-phone"></i> Hotline: 0879 917 194</p>
+        <p><i class="fa-solid fa-envelope"></i> Email: lienhe@hoaquanhatrong.vn</p>
+        <p><i class="fa-regular fa-clock"></i> Mở cửa 7:00 – 22:00 hằng ngày</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="siteFooter"></div>
+  <script src="assets/store.js"></script>
+</body>
+
+</html>
