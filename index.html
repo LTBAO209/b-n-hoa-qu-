@@ -1,356 +1,233 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hoa Quả Nhà Trồng</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
-  <link rel="stylesheet" type="text/css" href="./style.css" />
-  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+  <title>Hoa Quả Nhà Trồng – Trái cây sạch hái tận vườn</title>
+  <meta name="description" content="Cửa hàng trái cây sạch Hoa Quả Nhà Trồng: trái cây ba miền, nhập khẩu, giỏ quà. Giao trong 2 giờ tại TP.HCM, miễn phí ship từ 300.000đ.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="icon" href="./image/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-  <header>
-    <h1>HOA QUẢ NHÀ TRỒNG</h1>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><strong>DANH MỤC</strong></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item" id="home">
-              <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Giảm giá.html">Giảm giá</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Sản phẩm
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Hoa quả ba miền</a></li>
-                <li><a class="dropdown-item" href="#">Hoa quả nhập khẩu</a></li>
-                <li><a class="dropdown-item" href="#">Hoa quả đông lạnh</a></li>
-                <li><a class="dropdown-item" href="#">Giỏ hoa quả</a></li>
-                <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Liên hệ.html">Liên hệ</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-          <a href="admin.html" class="Quanly">
-            <i class="fa-solid fa-user"></i>
-            <span>Quản lý</span>
-          </a>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand">
+          <span class="brand-mark"><i class="fa-solid fa-leaf"></i></span>
+          <span class="brand-text">
+            <strong>Hoa Quả Nhà Trồng</strong>
+            <small>Trái cây sạch – hái tận vườn – giao tận nhà</small>
+          </span>
+        </a>
+        <div class="header-contact">
+          <span><i class="fa-solid fa-phone-volume"></i>0879 917 194</span>
+          <span><i class="fa-regular fa-clock"></i>7:00 – 22:00 mỗi ngày</span>
         </div>
       </div>
-    </nav>
+    </div>
   </header>
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" height="50%">
-        <img src="image/traicay.jpg" class="d-block w-100" alt="Ảnh">
-      </div>
-      <div class="carousel-item">
-        <img src="image/traicay1.jpg" class="d-block w-100" alt="Ảnh">
-      </div>
-      <div class="carousel-item">
-        <img src="image/traicay2.jpg" class="d-block w-100" alt="Ảnh">
+
+  <nav class="navbar navbar-expand-lg site-nav sticky-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="Giảm giá.html">Giảm giá</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html?category=cam-quyt">Họ cam quýt</a></li>
+              <li><a class="dropdown-item" href="index.html?category=qua-mong">Họ quả mọng</a></li>
+              <li><a class="dropdown-item" href="index.html?category=nhiet-doi">Trái cây nhiệt đới</a></li>
+              <li><a class="dropdown-item" href="index.html?category=nhap-khau">Trái cây nhập khẩu</a></li>
+              <li><a class="dropdown-item" href="index.html?category=gio-qua">Giỏ quà</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="Giảm giá.html">Sản phẩm giảm giá</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="Liên hệ.html">Liên hệ</a></li>
+        </ul>
+        <form class="d-flex search-form js-search-form" role="search">
+          <input class="form-control" type="search" name="q" placeholder="Tìm trái cây..." aria-label="Tìm kiếm sản phẩm">
+          <button class="btn btn-search" type="submit" aria-label="Tìm"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <a href="gio-hang.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i><span>Giỏ hàng</span>
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+        <a href="admin.html" class="admin-link"><i class="fa-solid fa-user-gear"></i><span>Quản lý</span></a>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <br />
-  <h3>Sản phẩm bán chạy tiêu biểu</h3>
-  <hr />
-  <div class="container">
-    <div class="row g-3">
-      <div class="col-lg-9">
-        <!--Sản phẩm-->
-        <div class="row mt-4 me-3">
-          <div class="col-lg-4 col-md-4 col-6 mb-4">
-            <div class="card h-100">
-              <img src="image/traicay3.jpg" class="card-img-top" alt="Ảnh">
-              <div class="card-body">
-                <h5 class="card-title">Cam Đà Lạt</h5>
-                <p class="card-text">20.000 VNT/kg</p>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Ảnh 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Ảnh 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Ảnh 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/traicay.jpg" class="hero-img" alt="Trái cây tươi mỗi ngày">
+              <div class="hero-caption">
+                <span class="hero-tag">Tươi mỗi ngày</span>
+                <h2>Trái cây sạch, hái tận vườn</h2>
+                <p>Chọn từ nông trại trong ngày, giao tận cửa trong 2 giờ tại TP.HCM. Miễn phí giao cho đơn từ 300.000đ.</p>
+                <a href="#san-pham" class="btn btn-hero">Mua ngay <i class="fa-solid fa-arrow-right"></i></a>
               </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-outline-success">Đặt mua</button>
+            </div>
+            <div class="carousel-item">
+              <img src="image/traicay1.jpg" class="hero-img" alt="Giỏ trái cây nhiệt đới">
+              <div class="hero-caption">
+                <span class="hero-tag">Đặc sản ba miền</span>
+                <h2>Vị ngọt của nắng Việt Nam</h2>
+                <p>Cam Đà Lạt, xoài Bình Dương, mãng cầu ta, dưa lưới… chín cây, không thuốc bảo quản.</p>
+                <a href="index.html?category=nhiet-doi" class="btn btn-hero">Xem trái cây nhiệt đới</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/traicay2.jpg" class="hero-img" alt="Giỏ quà trái cây">
+              <div class="hero-caption">
+                <span class="hero-tag">Quà tặng tinh tế</span>
+                <h2>Giỏ quà trái cây cao cấp</h2>
+                <p>Gói giấy kraft, kèm thiệp chúc – món quà trọn vẹn cho Tết, lễ và sinh nhật.</p>
+                <a href="index.html?category=gio-qua" class="btn btn-hero">Xem giỏ quà</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-6 mb-4">
-            <div class="card h-100">
-              <img src="image/traicay4.jpg" class="card-img-top" alt="Ảnh">
-              <div class="card-body">
-                <h5 class="card-title">Nho ôn đới</h5>
-                <p class="card-text">15.000 VND/kg</p>
-              </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-outline-success">Đặt mua</button>
-              </div>
-            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Trước</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Sau</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="usp-bar">
+      <div class="container">
+        <div class="usp-inner">
+          <div class="usp-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div><strong>Giao nhanh 2 giờ</strong><span>Nội thành TP.HCM</span></div>
           </div>
-          <div class="col-lg-4 col-md-4 col-6 mb-4">
-            <div class="card h-100">
-              <img src="image/traicay5.jpg" class="card-img-top" alt="Ảnh">
-              <div class="card-body">
-                <h5 class="card-title">Xoài Bình Dương</h5>
-                <p class="card-text">100.000 VND/kg</p>
-              </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-outline-success">Đặt mua</button>
-              </div>
-            </div>
+          <div class="usp-item">
+            <i class="fa-solid fa-seedling"></i>
+            <div><strong>100% nhà trồng</strong><span>Không thuốc bảo quản</span></div>
           </div>
-          <div class="col-lg-4 col-md-4 col-6 mb-4">
-            <div class="card h-100">
-              <img src="image/traicay6.jpg" class="card-img-top" alt="Ảnh">
-              <div class="card-body">
-                <h5 class="card-title">Dưa hấu không hột</h5>
-                <p class="card-text">20.000 VNT/kg</p>
-              </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-outline-success">Đặt mua</button>
-              </div>
-            </div>
+          <div class="usp-item">
+            <i class="fa-solid fa-rotate-left"></i>
+            <div><strong>Đổi trả 24 giờ</strong><span>Hàng lỗi, quả dập</span></div>
           </div>
-          <div class="col-lg-4 col-md-4 col-6 mb-4">
-            <div class="card h-100">
-              <img src="image/traicay7.jpg" class="card-img-top" alt="Ảnh">
-              <div class="card-body">
-                <h5 class="card-title">Mãng cầu ta</h5>
-                <p class="card-text">15.000 VND/kg</p>
-              </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-outline-success">Đặt mua</button>
-              </div>
-            </div>
+          <div class="usp-item">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <div><strong>Miễn phí ship</strong><span>Đơn từ 300.000đ</span></div>
           </div>
-          <div class="col-lg-4 col-md-4 col-6 mb-4">
-            <div class="card h-100">
-              <img src="image/traicay8.jpg" class="card-img-top" alt="Ảnh">
-              <div class="card-body">
-                <h5 class="card-title">Chuối</h5>
-                <p class="card-text">16.000 VND/kg</p>
-              </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-outline-success">Đặt mua</button>
-              </div>
-            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="san-pham">
+      <div class="section-head">
+        <h2>Sản phẩm bán chạy</h2>
+        <p>Chọn loại trái cây bạn thích, thêm vào giỏ và đặt hàng chỉ trong vài bước.</p>
+      </div>
+
+      <div class="row g-4">
+        <aside class="col-lg-3">
+          <div class="panel">
+            <h4 class="panel-title">Danh mục trái cây</h4>
+            <div class="category-list" id="categoryList"></div>
           </div>
-          <div class="col-lg-4 col-md-4 col-6 mb-4">
-            <div class="card h-100">
-              <img src="image/traicay9.jpg" class="card-img-top" alt="Ảnh">
-              <div class="card-body">
-                <h5 class="card-title">Táo đỏ</h5>
-                <p class="card-text">12.000 VND/kg</p>
-              </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-outline-success">Đặt mua</button>
-              </div>
-            </div>
+
+          <div class="panel mt-4">
+            <h4 class="panel-title">Xuất xứ</h4>
+            <div class="filter-list" id="originList"></div>
           </div>
-          <div class="col-lg-4 col-md-4 col-6 mb-4">
-            <div class="card h-100">
-              <img src="image/traicay10.jpg" class="card-img-top" alt="Ảnh">
-              <div class="card-body">
-                <h5 class="card-title">Cherry Úc</h5>
-                <p class="card-text">16.000 VND/kg</p>
-              </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-outline-success">Đặt mua</button>
-              </div>
-            </div>
+
+          <div class="panel mt-4">
+            <h4 class="panel-title">Lọc giá</h4>
+            <div class="filter-list" id="priceList"></div>
           </div>
-          <div class="col-lg-4 col-md-4 col-6 mb-4">
-            <div class="card h-100">
-              <img src="image/traicay11.jpg" class="card-img-top" alt="Ảnh">
-              <div class="card-body">
-                <h5 class="card-title">Dưa lưới Đà Lạt</h5>
-                <p class="card-text">17.000 VND/kg</p>
-              </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-outline-success">Đặt mua</button>
-              </div>
-            </div>
+
+          <div class="panel mt-4 promo-panel">
+            <img src="image/gio-qua-tet.png" alt="Giỏ quà trái cây Tết">
+            <h5>Tết đến rồi!</h5>
+            <p>Đặt giỏ quà trái cây cao cấp để tặng người thân – gói sẵn, giao tận nơi.</p>
+            <a href="index.html?category=gio-qua" class="btn btn-sm btn-success mt-3">Xem giỏ quà</a>
           </div>
-          <div class="col-lg-4 col-md-4 col-6 mb-4">
-            <div class="card h-100">
-              <img src="image/traicay12.jpg" class="card-img-top" alt="Ảnh">
-              <div class="card-body">
-                <h5 class="card-title">Dâu tây Hàn Quốc</h5>
-                <p class="card-text">16.000 VND/kg</p>
-              </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-outline-success">Đặt mua</button>
-              </div>
-            </div>
+        </aside>
+
+        <div class="col-lg-9">
+          <div class="catalog-toolbar">
+            <p class="mb-0" id="resultInfo">Đang tải sản phẩm...</p>
+            <button type="button" class="btn btn-link" id="clearFilters">Xóa bộ lọc</button>
           </div>
-          <div class="col-lg-4 col-md-4 col-6 mb-4">
-            <div class="card h-100">
-              <img src="image/traicay13.jpg" class="card-img-top" alt="Ảnh">
-              <div class="card-body">
-                <h5 class="card-title">Kiwi xanh</h5>
-                <p class="card-text">20.000 VND/kg</p>
-              </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-outline-success">Đặt mua</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-6 mb-4">
-            <div class="card h-100">
-              <img src="image/traicay14.jpg" class="card-img-top" alt="Ảnh">
-              <div class="card-body">
-                <h5 class="card-title">Quả bơ</h5>
-                <p class="card-text">16.000 VND/kg</p>
-              </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-outline-success">Đặt mua</button>
-              </div>
-            </div>
-          </div>
-          <!--Chuyển trang-->
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
+          <div class="row" id="productGrid"></div>
+          <nav aria-label="Chuyển trang">
+            <ul class="pagination justify-content-center mt-3" id="pagination"></ul>
           </nav>
         </div>
       </div>
-      <div class="col-lg-3">
-        <div class="row mt-4">
-          <!--Danh mục trái cây-->
-          <div class="Danhmuc">
-            <h4><strong>Danh mục trái cây</strong></h4>
-            <a href="">Họ cam quýt</a>
-            <a href="">Họ quả hạch</a>
-            <a href="">Họ táo tây</a>
-            <a href="">Họ quả mọng</a>
-            <a href="">Họ bầu bí</a>
-            <a href="">Họ trái cây nhiệt đới</a>
-          </div>
-          <!--Xuất sứ-->
-          <ul class="list-group mt-4 mb-3">
-            <li class="list-group-item" id="Danhmuc"><strong>Xuất xứ</strong></li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-              <label class="form-check-label" for="firstCheckbox">Việt Nam</label>
-            </li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-              <label class="form-check-label" for="secondCheckbox">Nhật Bản</label>
-            </li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-              <label class="form-check-label" for="thirdCheckbox">Pháp</label>
-            </li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckbox">
-              <label class="form-check-label" for="fourthCheckbox">Hàn quốc</label>
-            </li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckbox">
-              <label class="form-check-label" for="fifthCheckbox">Úc</label>
-            </li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="sixthCheckbox">
-              <label class="form-check-label" for="sixthCheckbox">Trung Quốc</label>
-            </li>
-          </ul>
-          <!--Lọc giá-->
-          <ul class="list-group mb-3">
-            <li class="list-group-item" id="Danhmuc"><strong>Lọc giá</strong></li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-              <label class="form-check-label" for="firstCheckbox">dưới 100.000đ</label>
-            </li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-              <label class="form-check-label" for="secondCheckbox">100.000đ - 200.000đ</label>
-            </li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-              <label class="form-check-label" for="thirdCheckbox">200.000đ - 500.000đ</label>
-            </li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckbox">
-              <label class="form-check-label" for="fourthCheckbox">500.000đ - 1.000.000đ</label>
-            </li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckbox">
-              <label class="form-check-label" for="fifthCheckbox">Từ 1.000.000đ trở lên</label>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="mt-5 pt-5 pb-5">
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-      <div class="row">
-        <div class="col" id="footer">
-          <h5 class="tieudefooter">Chính sách</h5>
-          <ul>
-            <li><a href="#" class="cs">Chính sách giao hàng</a></li>
-            <li><a href="#" class="cs">Chính sách đổi trả</a></li>
-            <li><a href="#" class="cs">Chính sách bảo mật thông tin cá nhân</a></li>
-            <li><a href="#" class="cs">Quy định và hình thức thanh toán</a></li>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="footer-title">Hoa Quả Nhà Trồng</h5>
+          <p>Trái cây sạch hái tận vườn, giao tận nhà trong 2 giờ tại TP.HCM.</p>
+          <p><i class="fa-solid fa-location-dot"></i>280 Đ. An Dương Vương, P.4, Q.5, TP.HCM</p>
+          <p><i class="fa-solid fa-phone"></i>Hotline: 0879 917 194</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-title">Chính sách</h5>
+          <ul class="footer-list">
+            <li><a href="#">Chính sách giao hàng</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Bảo mật thông tin cá nhân</a></li>
+            <li><a href="#">Quy định và hình thức thanh toán</a></li>
           </ul>
         </div>
-        <div class="col" id="footer">
-          <h5 class="tieudefooter">Thông tin công ty</h5>
-          <p>Công Ty TNHH Hoa Quả Nhà Trồng</p>
-          <p>Trụ sở: 280 Đ. An Dương Vương, Phường 4, Quận 5, TP.Hồ Chí Minh</p>
-          <p>Hotline: 0879917194</p>
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Danh mục</h5>
+          <ul class="footer-list">
+            <li><a href="index.html?category=cam-quyt">Họ cam quýt</a></li>
+            <li><a href="index.html?category=qua-mong">Họ quả mọng</a></li>
+            <li><a href="index.html?category=nhiet-doi">Trái cây nhiệt đới</a></li>
+            <li><a href="index.html?category=nhap-khau">Trái cây nhập khẩu</a></li>
+            <li><a href="index.html?category=gio-qua">Giỏ quà</a></li>
+          </ul>
         </div>
-        <div class="col" id="footer">
-          <h5 class="tieudefooter">Liên hệ qua nền tảng</h5>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-solid fa-envelope"></i></a>
-          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <div class="col-lg-3">
+          <h5 class="footer-title">Kết nối với chúng tôi</h5>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="Liên hệ.html" aria-label="Liên hệ"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Zalo"><i class="fa-solid fa-comment-dots"></i></a>
+          </div>
         </div>
       </div>
     </div>
   </footer>
-  <div class="Copyright">
-    <p>Copyright &#169 2024 Hoa_Qua_Nha_Trong Market</p>
-  </div>
+  <div class="copyright">&copy; <span id="year">2026</span> Hoa Quả Nhà Trồng Market – Trái cây sạch, giá tận vườn.</div>
+
   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./app.js"></script>
 </body>
 
 </html>

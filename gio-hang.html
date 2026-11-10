@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giỏ hàng – Hoa Quả Nhà Trồng</title>
+  <meta name="description" content="Giỏ hàng và đặt hàng trái cây sạch tại Hoa Quả Nhà Trồng.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="icon" href="./image/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body data-page="cart">
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand">
+          <span class="brand-mark"><i class="fa-solid fa-leaf"></i></span>
+          <span class="brand-text">
+            <strong>Hoa Quả Nhà Trồng</strong>
+            <small>Trái cây sạch – hái tận vườn – giao tận nhà</small>
+          </span>
+        </a>
+        <div class="header-contact">
+          <span><i class="fa-solid fa-phone-volume"></i>0879 917 194</span>
+          <span><i class="fa-regular fa-clock"></i>7:00 – 22:00 mỗi ngày</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg site-nav sticky-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="Giảm giá.html">Giảm giá</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html?category=cam-quyt">Họ cam quýt</a></li>
+              <li><a class="dropdown-item" href="index.html?category=qua-mong">Họ quả mọng</a></li>
+              <li><a class="dropdown-item" href="index.html?category=nhiet-doi">Trái cây nhiệt đới</a></li>
+              <li><a class="dropdown-item" href="index.html?category=nhap-khau">Trái cây nhập khẩu</a></li>
+              <li><a class="dropdown-item" href="index.html?category=gio-qua">Giỏ quà</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="Liên hệ.html">Liên hệ</a></li>
+        </ul>
+        <form class="d-flex search-form js-search-form" role="search">
+          <input class="form-control" type="search" name="q" placeholder="Tìm trái cây..." aria-label="Tìm kiếm sản phẩm">
+          <button class="btn btn-search" type="submit" aria-label="Tìm"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <a href="gio-hang.html" class="cart-link active">
+          <i class="fa-solid fa-cart-shopping"></i><span>Giỏ hàng</span>
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+        <a href="admin.html" class="admin-link"><i class="fa-solid fa-user-gear"></i><span>Quản lý</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container page-wrap">
+    <div class="section-head text-start">
+      <h2>Giỏ hàng của bạn</h2>
+      <p>Kiểm tra lại sản phẩm, điền thông tin giao hàng và đặt đơn.</p>
+    </div>
+    <div id="cartWrap"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="footer-title">Hoa Quả Nhà Trồng</h5>
+          <p>Trái cây sạch hái tận vườn, giao tận nhà trong 2 giờ tại TP.HCM.</p>
+          <p><i class="fa-solid fa-location-dot"></i>280 Đ. An Dương Vương, P.4, Q.5, TP.HCM</p>
+          <p><i class="fa-solid fa-phone"></i>Hotline: 0879 917 194</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-title">Chính sách</h5>
+          <ul class="footer-list">
+            <li><a href="#">Chính sách giao hàng</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Bảo mật thông tin cá nhân</a></li>
+            <li><a href="#">Quy định và hình thức thanh toán</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Danh mục</h5>
+          <ul class="footer-list">
+            <li><a href="index.html?category=cam-quyt">Họ cam quýt</a></li>
+            <li><a href="index.html?category=qua-mong">Họ quả mọng</a></li>
+            <li><a href="index.html?category=nhiet-doi">Trái cây nhiệt đới</a></li>
+            <li><a href="index.html?category=nhap-khau">Trái cây nhập khẩu</a></li>
+            <li><a href="index.html?category=gio-qua">Giỏ quà</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="footer-title">Kết nối với chúng tôi</h5>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="Liên hệ.html" aria-label="Liên hệ"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Zalo"><i class="fa-solid fa-comment-dots"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">&copy; <span id="year">2026</span> Hoa Quả Nhà Trồng Market – Trái cây sạch, giá tận vườn.</div>
+
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>

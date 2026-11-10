@@ -1,157 +1,228 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hoa Quả Nhà Trồng</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
-  <link rel="stylesheet" type="text/css" href="./style.css" />
-  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+  <title>Quản lý cửa hàng – Hoa Quả Nhà Trồng</title>
+  <meta name="description" content="Trang quản lý sản phẩm, đơn hàng và tin nhắn của cửa hàng Hoa Quả Nhà Trồng.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="icon" href="./image/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-  <header>
-    <h1>HOA QUẢ NHÀ TRỒNG</h1>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><strong>DANH MỤC</strong></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Giảm giá.html">Giảm giá</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Sản phẩm
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Hoa quả ba miền</a></li>
-                <li><a class="dropdown-item" href="#">Hoa quả nhập khẩu</a></li>
-                <li><a class="dropdown-item" href="#">Hoa quả đông lạnh</a></li>
-                <li><a class="dropdown-item" href="#">Giỏ hoa quả</a></li>
-                <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Liên hệ.html">Liên hệ</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-          <a href="#" class="Quanly" id="Qly">
-            <i class="fa-solid fa-user"></i>
-            <span>Quản lý</span>
-          </a>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <div class="container mt-5">
-    <h1 class="text-center text-primary mb-4">Quản lý sản phẩm</h1>
-    <div class="card mb-5">
-      <div class="card-header bg-primary text-white">Danh sách sản phẩm</div>
-      <div class="card-body">
-        <table class="table table-bordered">
-          <thead class="table-light">
-            <tr>
-              <th>#</th>
-              <th>Tên sản phẩm</th>
-              <th>Giá (VNĐ)</th>
-              <th>Số lượng còn lại</th>
-              <th>Số lượng đã bán</th>
-              <th>Hành động</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Táo Mỹ</td>
-              <td>50,000</td>
-              <td>80</td>
-              <td>20</td>
-              <td>
-                <button class="btn btn-warning btn-sm">Sửa</button>
-                <button class="btn btn-danger btn-sm">Xóa</button>
-              </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Cam Úc</td>
-              <td>80,000</td>
-              <td>30</td>
-              <td>70</td>
-              <td>
-                <button class="btn btn-warning btn-sm">Sửa</button>
-                <button class="btn btn-danger btn-sm">Xóa</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header bg-success text-white">Thêm sản phẩm mới</div>
-      <div class="card-body">
-        <form>
-          <div class="mb-3">
-            <label for="productName" class="form-label">Tên sản phẩm</label>
-            <input type="text" id="productName" class="form-control" placeholder="Nhập tên sản phẩm">
-          </div>
-          <div class="mb-3">
-            <label for="productPrice" class="form-label">Giá (VNĐ)</label>
-            <input type="number" id="productPrice" class="form-control" placeholder="Nhập giá sản phẩm">
-          </div>
-          <div class="mb-3">
-            <label for="productQuantity" class="form-label">Số lượng</label>
-            <input type="number" id="productQuantity" class="form-control" placeholder="Nhập số lượng ban đầu">
-          </div>
-          <button type="submit" class="btn btn-success">Thêm sản phẩm</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  <footer class="mt-5 pt-5 pb-5">
+<body data-page="admin">
+  <header class="site-header">
     <div class="container">
-      <div class="row">
-        <div class="col" id="footer">
-          <h5 class="tieudefooter">Chính sách</h5>
-          <ul>
-            <li><a href="#" class="cs">Chính sách giao hàng</a></li>
-            <li><a href="#" class="cs">Chính sách đổi trả</a></li>
-            <li><a href="#" class="cs">Chính sách bảo mật thông tin cá nhân</a></li>
-            <li><a href="#" class="cs">Quy định và hình thức thanh toán</a></li>
+      <div class="header-inner">
+        <a href="index.html" class="brand">
+          <span class="brand-mark"><i class="fa-solid fa-leaf"></i></span>
+          <span class="brand-text">
+            <strong>Hoa Quả Nhà Trồng</strong>
+            <small>Trái cây sạch – hái tận vườn – giao tận nhà</small>
+          </span>
+        </a>
+        <div class="header-contact">
+          <span><i class="fa-solid fa-phone-volume"></i>0879 917 194</span>
+          <span><i class="fa-regular fa-clock"></i>7:00 – 22:00 mỗi ngày</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg site-nav sticky-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="Giảm giá.html">Giảm giá</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html?category=cam-quyt">Họ cam quýt</a></li>
+              <li><a class="dropdown-item" href="index.html?category=qua-mong">Họ quả mọng</a></li>
+              <li><a class="dropdown-item" href="index.html?category=nhiet-doi">Trái cây nhiệt đới</a></li>
+              <li><a class="dropdown-item" href="index.html?category=nhap-khau">Trái cây nhập khẩu</a></li>
+              <li><a class="dropdown-item" href="index.html?category=gio-qua">Giỏ quà</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="Liên hệ.html">Liên hệ</a></li>
+        </ul>
+        <form class="d-flex search-form js-search-form" role="search">
+          <input class="form-control" type="search" name="q" placeholder="Tìm trái cây..." aria-label="Tìm kiếm sản phẩm">
+          <button class="btn btn-search" type="submit" aria-label="Tìm"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <a href="gio-hang.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i><span>Giỏ hàng</span>
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+        <a href="admin.html" class="admin-link"><i class="fa-solid fa-user-gear"></i><span>Quản lý</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container page-wrap">
+    <div class="section-head text-start">
+      <h2>Quản lý cửa hàng</h2>
+      <p>Thêm, sửa, xóa sản phẩm và theo dõi đơn hàng, tin nhắn khách gửi. Dữ liệu được lưu trên trình duyệt bạn đang dùng.</p>
+    </div>
+
+    <div class="row g-3 mb-4" id="adminStats"></div>
+
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-products" type="button" role="tab">Sản phẩm</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-orders" type="button" role="tab">
+          Đơn hàng <span class="badge text-bg-warning" data-order-count>0</span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-messages" type="button" role="tab">Tin nhắn</button>
+      </li>
+    </ul>
+
+    <div class="tab-content pt-4">
+      <div class="tab-pane fade show active" id="tab-products" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-xl-7">
+            <div class="panel">
+              <h4 class="panel-title">Danh sách sản phẩm</h4>
+              <div class="table-responsive">
+                <table class="table align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Sản phẩm</th>
+                      <th>Giá bán</th>
+                      <th>Tồn</th>
+                      <th>Đã bán</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="productTableBody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-5">
+            <div class="panel">
+              <h4 class="panel-title" id="formTitle">Thêm sản phẩm mới</h4>
+              <form id="productForm" class="row g-3" novalidate>
+                <div class="col-12">
+                  <label class="form-label" for="pName">Tên sản phẩm</label>
+                  <input class="form-control" id="pName" required placeholder="Ví dụ: Ổi Đài Loan">
+                  <div class="invalid-feedback">Vui lòng nhập tên sản phẩm.</div>
+                </div>
+                <div class="col-6">
+                  <label class="form-label" for="pPrice">Giá bán (VNĐ)</label>
+                  <input type="number" class="form-control" id="pPrice" min="0" step="500" required placeholder="20000">
+                  <div class="invalid-feedback">Nhập giá bán.</div>
+                </div>
+                <div class="col-6">
+                  <label class="form-label" for="pOldPrice">Giá gốc (nếu giảm)</label>
+                  <input type="number" class="form-control" id="pOldPrice" min="0" step="500" placeholder="25000">
+                </div>
+                <div class="col-6">
+                  <label class="form-label" for="pUnit">Đơn vị</label>
+                  <input class="form-control" id="pUnit" value="kg" placeholder="kg / hộp / giỏ">
+                </div>
+                <div class="col-6">
+                  <label class="form-label" for="pStock">Số lượng còn</label>
+                  <input type="number" class="form-control" id="pStock" min="0" value="50">
+                </div>
+                <div class="col-6">
+                  <label class="form-label" for="pCategory">Danh mục</label>
+                  <select class="form-select" id="pCategory"></select>
+                </div>
+                <div class="col-6">
+                  <label class="form-label" for="pOrigin">Xuất xứ</label>
+                  <input class="form-control" id="pOrigin" value="Việt Nam" placeholder="Việt Nam">
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="pImage">Ảnh sản phẩm</label>
+                  <select class="form-select" id="pImage"></select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="pDesc">Mô tả</label>
+                  <textarea class="form-control" id="pDesc" rows="3" placeholder="Mô tả ngắn về sản phẩm"></textarea>
+                </div>
+                <div class="col-12 d-flex gap-2">
+                  <button type="submit" class="btn btn-success" id="submitProduct">Thêm sản phẩm</button>
+                  <button type="button" class="btn btn-outline-secondary" id="cancelEdit" hidden>Hủy sửa</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="tab-orders" role="tabpanel">
+        <div id="ordersWrap"></div>
+      </div>
+
+      <div class="tab-pane fade" id="tab-messages" role="tabpanel">
+        <div id="messagesWrap"></div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mt-4">
+      <p class="small text-muted mb-0">Website tĩnh: sản phẩm, đơn hàng và tin nhắn được lưu trong localStorage của trình duyệt.</p>
+      <button class="btn btn-outline-danger btn-sm" id="resetData">Khôi phục dữ liệu mẫu</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="footer-title">Hoa Quả Nhà Trồng</h5>
+          <p>Trái cây sạch hái tận vườn, giao tận nhà trong 2 giờ tại TP.HCM.</p>
+          <p><i class="fa-solid fa-location-dot"></i>280 Đ. An Dương Vương, P.4, Q.5, TP.HCM</p>
+          <p><i class="fa-solid fa-phone"></i>Hotline: 0879 917 194</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-title">Chính sách</h5>
+          <ul class="footer-list">
+            <li><a href="#">Chính sách giao hàng</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Bảo mật thông tin cá nhân</a></li>
+            <li><a href="#">Quy định và hình thức thanh toán</a></li>
           </ul>
         </div>
-        <div class="col" id="footer">
-          <h5 class="tieudefooter">Thông tin công ty</h5>
-          <p>Công Ty TNHH Hoa Quả Nhà Trồng</p>
-          <p>Trụ sở: 280 Đ. An Dương Vương, Phường 4, Quận 5, TP.Hồ Chí Minh</p>
-          <p>Hotline: 0879917194</p>
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Danh mục</h5>
+          <ul class="footer-list">
+            <li><a href="index.html?category=cam-quyt">Họ cam quýt</a></li>
+            <li><a href="index.html?category=qua-mong">Họ quả mọng</a></li>
+            <li><a href="index.html?category=nhiet-doi">Trái cây nhiệt đới</a></li>
+            <li><a href="index.html?category=nhap-khau">Trái cây nhập khẩu</a></li>
+            <li><a href="index.html?category=gio-qua">Giỏ quà</a></li>
+          </ul>
         </div>
-        <div class="col" id="footer">
-          <h5 class="tieudefooter">Liên hệ qua nền tảng</h5>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-solid fa-envelope"></i></a>
-          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <div class="col-lg-3">
+          <h5 class="footer-title">Kết nối với chúng tôi</h5>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="Liên hệ.html" aria-label="Liên hệ"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Zalo"><i class="fa-solid fa-comment-dots"></i></a>
+          </div>
         </div>
       </div>
     </div>
   </footer>
-  <div class="Copyright">
-    <p>Copyright &#169 2024 Hoa_Qua_Nha_Trong Market</p>
-  </div>
+  <div class="copyright">&copy; <span id="year">2026</span> Hoa Quả Nhà Trồng Market – Trái cây sạch, giá tận vườn.</div>
+
   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./app.js"></script>
 </body>
 
 </html>
